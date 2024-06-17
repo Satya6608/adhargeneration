@@ -36,12 +36,14 @@ input[type=text], [type=email]{
   border-bottom: 1px solid black;
   background-color: #ffffff;
   outline:none;
+  color: #000;
   width:100%;
   margin: 8px 0;
   padding:10px 0;
 }
 input[type=number]{
   border: none;
+  color: #000;
   border-bottom: 1px solid black;
   outline:none;
   margin: 8px 0;
