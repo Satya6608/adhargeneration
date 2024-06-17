@@ -34,7 +34,7 @@ const RegistrationForm = ({ onSubmit }) => {
       <div className="container">
         <div className="content">
           <img src="https://res.cloudinary.com/debbsefe/image/upload/f_auto,c_fill,dpr_auto,e_grayscale/image_fz7n7w.webp" alt="header-image" className="cld-responsive" />
-          <h1 className="form-title">Adhar Registeration</h1>    
+          <h2 className="form-title">Adhar Registeration</h2>    
           <form onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
