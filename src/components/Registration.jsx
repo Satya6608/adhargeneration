@@ -22,11 +22,20 @@ const RegistrationForm = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (formData.pinCode.length !== 6) {
+      alert("Pin code must be exactly 6 characters long.");
+      return;
+    }
     onSubmit(formData);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <>
+      <div className="container">
+        <div className="content">
+          <img src="https://res.cloudinary.com/debbsefe/image/upload/f_auto,c_fill,dpr_auto,e_grayscale/image_fz7n7w.webp" alt="header-image" className="cld-responsive" />
+          <h1 className="form-title">Adhar Registeration</h1>    
+          <form onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} required />
@@ -49,7 +58,7 @@ const RegistrationForm = ({ onSubmit }) => {
       </div>
       <div>
         <label>Pin Code:</label>
-        <input type="text" name="pinCode" value={formData.pinCode} onChange={handleChange} required />
+        <input type="text" name="pinCode" value={formData.pinCode} onChange={handleChange} maxLength="6" required />
       </div>
       <div>
         <label>State:</label>
@@ -57,10 +66,14 @@ const RegistrationForm = ({ onSubmit }) => {
       </div>
       <div>
         <label>Contact:</label>
-        <input type="text" name="contact" value={formData.contact} onChange={handleChange} required />
+        <input type="text" name="contact" value={formData.contact} onChange={handleChange} maxLength="10" required />
       </div>
       <button type="submit">Submit</button>
     </form>
+        </div>
+      </div>
+
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import RegistrationForm from './components/Registration';
 import AadharCard from './components/AdharCard';
+import "./App.css"
 
 const App = () => {
   const [userData, setUserData] = useState(null);
@@ -19,9 +20,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Registration Form</h1>
-      <RegistrationForm onSubmit={handleFormSubmit} />
-      {userData && <AadharCard userData={userData} />}
+      {userData ? <AadharCard userData={userData} /> : <RegistrationForm onSubmit={handleFormSubmit} />}
     </div>
   );
 };
