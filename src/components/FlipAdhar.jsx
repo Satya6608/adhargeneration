@@ -33,7 +33,7 @@ const FlipAdhar = ({ userData }) => {
             <strong>Address:</strong>
           </p>
           <p>
-            S/O {fathersName},{address},{locality},{pinCode},{state}
+            S/O {fathersName},{address},{locality},{state},{pinCode}
           </p>
         </div>
         <div className="right-side-back">
