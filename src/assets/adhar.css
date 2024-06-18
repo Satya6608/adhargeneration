@@ -1,0 +1,78 @@
+.container {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 500px;
+    height: 240px;
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+    display: block !important;
+    background-image: linear-gradient(180deg, #f8a01f, transparent);
+    ;
+}
+
+.outer-adhar {
+    display: flex;
+}
+
+.outer-adhar .left-side {
+    width: 20%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+img {
+    width: 100% !important;
+    height: 100px !important;
+    object-fit: cover;
+}
+
+.outer-adhar .right-side {
+    width: 80%;
+}
+
+.right-side p {
+    text-align: left;
+    margin: 0 20px;
+    font-size: 11px;
+}
+
+.uidNumber {
+    margin: 5px auto;
+    display: block;
+    font-size: 20px;
+}
+
+.redline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    margin: 10px 0;
+}
+
+.left-side-back {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.right-side-back {
+    width: 50%;
+    margin-bottom: 34px;
+}
+
+.right-side-back p {
+    text-align: left;
+    margin: 0;
+}
+
+.left-side-back p {
+    text-align: left;
+    margin: 0;
+}
